@@ -53,7 +53,7 @@ async def game_status(ctx):
     await ctx.send("📊 Game Status: No active games.")
 
 
-@bot.command(name="help")
+@bot.command(name="commands")
 async def help_command(ctx):
     """Show available commands."""
     embed = discord.Embed(title="Fight-John Commands", color=discord.Color.blue())
