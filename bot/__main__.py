@@ -53,8 +53,8 @@ async def game_status(ctx):
     await ctx.send("📊 Game Status: No active games.")
 
 
-@bot.command(name="help")
-async def help_command(ctx):
+@bot.command(name="commands")
+async def list_commands(ctx):
     """Show available commands."""
     embed = discord.Embed(title="Fight-John Commands", color=discord.Color.blue())
     embed.add_field(name=">>new", value="Start a new battle royale", inline=False)
