@@ -5,11 +5,7 @@ import asyncio
 import logging
 from discord.ext import commands
 import discord
-from dotenv import load_dotenv
 from motor.motor_asyncio import AsyncIOMotorClient
-
-# Load environment variables
-load_dotenv()
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
@@ -82,6 +78,7 @@ async def main():
     if not token:
         raise ValueError("DISCORD_TOKEN environment variable is required")
 
+    logger.info("Starting bot...")
     # Setup MongoDB
     await setup_mongo()
 
